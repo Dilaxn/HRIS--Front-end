@@ -40,7 +40,7 @@ function Layout(props) {
 
   // global
   var layoutState = useLayoutState();
-alert("props"+props.user_name)
+  alert('props layoiut: ' + JSON.stringify(props));
 
   return (
     <div className={classes.root}>

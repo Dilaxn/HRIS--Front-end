@@ -33,6 +33,7 @@ import { Typography } from "../../components/Wrappers";
 import Dot from "../../components/Sidebar/components/Dot";
 import Table from "./components/Table/Table";
 import BigStat from "./components/BigStat/BigStat";
+import { loginUser, readUser, useUserDispatch, useUserState } from "../../context/UserContext";
 
 const mainChartData = getMainChartData();
 const PieChartData = [
@@ -42,7 +43,11 @@ const PieChartData = [
   { name: "Group D", value: 200, color: "success" },
 ];
 
-export default function Dashboard(props) {
+export default function Dashboard(state) {
+  const d= readUser()
+  let namee;
+  namee = localStorage.getItem("f_name");
+  alert("read dshboard  "+namee)
   var classes = useStyles();
   var theme = useTheme();
 

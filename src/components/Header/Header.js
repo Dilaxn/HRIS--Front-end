@@ -104,7 +104,8 @@ alert(props.user)
   var [isNotificationsUnread, setIsNotificationsUnread] = useState(true);
   var [profileMenu, setProfileMenu] = useState(null);
   var [isSearchOpen, setSearchOpen] = useState(false);
-
+  let namee;
+  namee = localStorage.getItem("f_name");
   return (
     <AppBar position="fixed" className={classes.appBar}>
       <Toolbar className={classes.toolbar}>
@@ -289,7 +290,7 @@ alert(props.user)
         >
           <div className={classes.profileMenuUser}>
             <Typography variant="h4" weight="medium">
-              John Smith
+              {namee}
             </Typography>
             <Typography
               className={classes.profileMenuLink}
