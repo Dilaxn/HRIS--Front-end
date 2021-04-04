@@ -83,6 +83,7 @@ const SidebarView = ({ classes, theme, toggleSidebar, isSidebarOpened, isPermane
         </IconButton>
       </div>
       <List className={classes.sidebarList}>
+
         {structure.map(link => <SidebarLink key={link.id} location={location} isSidebarOpened={isSidebarOpened} {...link} />)}
       </List>
     </Drawer>

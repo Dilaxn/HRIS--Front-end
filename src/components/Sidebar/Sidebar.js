@@ -217,6 +217,7 @@ function Sidebar({ location }) {
 
   return (
     <Drawer
+
       variant={isPermanent ? "permanent" : "temporary"}
       className={classNames(classes.drawer, {
         [classes.drawerOpen]: isSidebarOpened,
@@ -239,8 +240,10 @@ function Sidebar({ location }) {
             }}
           />
         </IconButton>
+
       </div>
       <List className={classes.sidebarList}>
+
         {structure.map(link => (
           <SidebarLink
             key={link.id}
@@ -249,6 +252,7 @@ function Sidebar({ location }) {
             {...link}
           />
         ))}
+
       </List>
     </Drawer>
   );
