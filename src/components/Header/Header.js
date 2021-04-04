@@ -91,7 +91,7 @@ const notifications = [
 
 export default function Header(props) {
   var classes = useStyles();
-alert(props.user)
+// alert(props.user)
   // global
   var layoutState = useLayoutState();
   var layoutDispatch = useLayoutDispatch();

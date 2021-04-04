@@ -30,7 +30,121 @@ import {
 } from "../../context/LayoutContext";
 
 const structure = [
+
   { id: 0, label: "Dashboard", link: "/app/dashboard", icon: <HomeIcon /> },
+  { id: 1, label: "Admin", link: "/app/users", icon: <HomeIcon /> ,
+    children: [
+      { label: "User Management", link: "/app/users" ,
+        children: [
+          { label: "Users", link: "/app/users" },
+        ],},
+
+      { label: "Job", link: "/app/jobtitles",
+        children: [
+          { label: "Job Titles", link: "/app/jobtitles" },
+          { label: "Pay Grades", link: "/app/paygrades" },
+          { label: "Employment Status", link: "/app/employementstatus" },
+          { label: "Job Categories", link: "/app/jobcategories" },
+          { label: "Work Shifts", link: "/app/addworkshift" },
+        ],},
+      { label: "Organization", link: "/app/ui/maps",
+        children: [
+          { label: "General Information", link: "/app/generalinformation" },
+          { label: "Locations", link: "/app/locations" },
+          { label: "Structure", link: "/app/ui/maps" },
+        ],},
+      { label: "Qualifications", link: "/app/ui/charts",
+        children: [
+          { label: "Skills", link: "/app/skills" },
+          { label: "Education", link: "/app/education" },
+          { label: "Licenses", link: "/app/licenses" },
+          { label: "Languages", link: "/app/languages" },
+          { label: "Memberships", link: "/app/memberships" },
+        ],},
+      { label: "Nationality", link: "/app/ui/maps" },
+      { label: "Configuration", link: "/app/ui/maps",
+        children: [
+          { label: "Email Configuration", link: "/app/users" },
+          { label: "Email Subscription", link: "/app/jobtitles" },
+          { label: "Location", link: "/app/ui/maps" },
+          { label: "Modules", link: "/app/ui/charts" },
+          { label: "Social Media Authentication", link: "/app/ui/maps" },
+          { label: "Register OAuth Client", link: "/app/ui/maps" },
+        ],},
+    ],},
+
+  { id: 0, label: "PIM", link: "/app/dashboard", icon: <HomeIcon /> ,
+    children: [
+      { label: "Configuration", link: "/app/ui/icons",
+        children: [
+          { label: "Optional Fields", link: "/app/optionalfields" },
+          { label: "Custom Fields", link: "/app/customfields" },
+          { label: "Data Import", link: "/app/dataimport" },
+          { label: "Reporting Methods", link: "/app/reportmethods" },
+          { label: "Terminated Reasons", link: "/app/terminatedreasons" },
+        ],},
+      { label: "Employee List", link: "/app/employeelist" },
+      { label: "Add Employee", link: "/app/addemployee" },
+      { label: "Reports", link: "/app/ui/maps" },
+    ],},
+
+  { id: 0, label: "Leave", link: "/app/dashboard", icon: <HomeIcon /> ,
+    children: [
+      { label: "Apply", link: "/app/ui/icons" },
+      { label: "My Leave", link: "/app/ui/charts" },
+      { label: "Entitlements", link: "/app/ui/maps",
+        children: [
+          { label: "Add Entitlements", link: "/app/users" },
+          { label: "Employee Entitlements", link: "/app/jobtitles" },
+          { label: "My Entitlements", link: "/app/ui/maps" },
+        ],},
+      { label: "Reports", link: "/app/ui/icons",
+        children: [
+          { label: "Leave Entitlements and Usage Report", link: "/app/users" },
+          { label: "My Leave Entitlements and Usage Report", link: "/app/jobtitles" },
+        ],},
+      { label: "Configure", link: "/app/ui/charts",
+        children: [
+          { label: "Leave Period", link: "/app/users" },
+          { label: "Leave Types", link: "/app/jobtitles" },
+          { label: "Work Week", link: "/app/ui/maps" },
+          { label: "Holidays", link: "/app/ui/charts" },
+        ],},
+      { label: "Leave List", link: "/app/ui/maps" },
+      { label: "Assign Leave", link: "/app/ui/maps" },
+    ],},
+
+  { id: 0, label: "Time", link: "/app/dashboard", icon: <HomeIcon /> ,
+    children: [
+      { label: "Timesheets", link: "/app/ui/icons",
+        children: [
+          { label: "My Timesheets", link: "/app/users" },
+          { label: "Employee Timesheets", link: "/app/jobtitles" },
+        ],},
+      { label: "Attendance", link: "/app/ui/charts",
+        children: [
+          { label: "My Records", link: "/app/users" },
+          { label: "Punch In/Out", link: "/app/jobtitles" },
+          { label: "Employee Records", link: "/app/ui/maps" },
+          { label: "Configuration", link: "/app/ui/maps" },
+        ],},
+      { label: "Reports", link: "/app/ui/maps",
+        children: [
+          { label: "Project Reports", link: "/app/users" },
+          { label: "Employee Reports", link: "/app/jobtitles" },
+          { label: "Attendance Summary", link: "/app/ui/maps" },
+        ],},
+      { label: "Project Info", link: "/app/ui/maps",
+        children: [
+          { label: "Customers", link: "/app/users" },
+          { label: "Projects", link: "/app/jobtitles" },
+        ],},
+    ],},
+  { id: 0, label: "Recruitment", link: "/app/dashboard", icon: <HomeIcon /> },
+  { id: 0, label: "MyInfo", link: "/app/dashboard", icon: <HomeIcon /> },
+  { id: 0, label: "Directory", link: "/app/dashboard", icon: <HomeIcon /> },
+  { id: 0, label: "Buzz", link: "/app/dashboard", icon: <HomeIcon /> },
+
   {
     id: 1,
     label: "Typography",

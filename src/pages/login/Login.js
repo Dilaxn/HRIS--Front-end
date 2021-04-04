@@ -14,7 +14,6 @@ import classnames from "classnames";
 
 // styles
 import useStyles from "./styles";
-
 // logo
 import logo from "./logo.svg";
 import google from "../../images/google.svg";
