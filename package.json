@@ -57,7 +57,7 @@
   "devDependencies": {
     "@babel/helper-call-delegate": "^7.11.4",
     "@material-ui/pickers": "^3.3.10",
-    "axios": "^0.21.1",
+    "axios": "^1.6.0",
     "components": "^0.1.0",
     "email-validator": "^2.0.4",
     "prettier": "^2.1.1"
